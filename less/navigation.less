@@ -5,10 +5,16 @@
     .flexLayout(space-between, center);
 
     nav{
-        width: 33%;
+        width: 42%;
         .flexLayout(space-between, center);
         a{
             .defaultAnchors(1.6rem);
         }
+        @media @mobile{
+            width: 90%;
+        }
+    }
+    @media @mobile{
+        flex-direction: column;
     }
 }

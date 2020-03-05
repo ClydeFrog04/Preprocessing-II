@@ -10,15 +10,25 @@
         .text-content {
             width: 48%;
             padding-right: 1%;
+            @media @mobile{
+                width: 90%;
+            }
         }
 
         .img-content {
             width: 48%;
             padding-left: 1%;
+            @media @mobile{
+                width: 90%;
+            }
 
             img {
                 border-radius: 10px;
             }
+        }
+        @media @mobile{
+            .flexLayout(center, center);
+            flex-direction: column;
         }
     }
 
@@ -35,6 +45,10 @@
             padding-right: 1%;
             padding-left: 0;
         }
+        @media @mobile{
+            flex-direction: column-reverse;
+            width: 100%;
+        }
     }
 
     .content-destination {
@@ -43,6 +57,9 @@
 
         img {
             border-radius: 10px;
+        }
+        @media @mobile{
+            width: 90%;
         }
     }
 
@@ -55,6 +72,9 @@
         .destination {
             width: 30%;
             margin-bottom: 30px;
+            @media @mobile{
+                width: 90%;
+            }
         }
 
         .btn{
@@ -63,6 +83,10 @@
             .buttonStyle(80%, white, @button-bg, blackl, 10px);
             font-size: 1.6rem;
             .flexLayout(center, center);
+        }
+        @media @mobile{
+            .flexLayout(center, center);
+            flex-direction: column;
         }
     }
 
