@@ -1,1 +1,14 @@
 // Navigation Styles here
+.navigation{
+    width: 100%;
+    margin: @defaultMargin 0;
+    .flexLayout(space-between, center);
+
+    nav{
+        width: 33%;
+        .flexLayout(space-between, center);
+        a{
+            .defaultAnchors(1.6rem);
+        }
+    }
+}

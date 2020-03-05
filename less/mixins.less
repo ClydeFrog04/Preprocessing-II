@@ -1,1 +1,22 @@
 // Mixins in here
+.flexLayout(@jContent, @aItems){
+    display: flex;
+    justify-content: @jContent;
+    align-items: @aItems;
+}
+.defaultAnchors(@fontSize){
+    color: black;
+    text-decoration: none;
+    font-size: @fontSize;
+}
+
+.buttonStyle(@btnWidth, @btnTxtColor, @btnColor, @btnBorderClr ,@btnRadius){
+    width: @btnWidth;
+    color: @btnTxtColor;
+    background-color: @btnColor;
+    border: @btnSize solid @btnBorderClr;
+    border-radius: @btnRadius;
+
+
+
+}
