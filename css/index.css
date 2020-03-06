@@ -323,6 +323,16 @@ img {
 }
 .home header {
   border-bottom: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.home header .topBus {
+  width: 100%;
+  border: none;
+  margin: 0;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home header h2 {
   margin-top: 2%;

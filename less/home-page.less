@@ -1,5 +1,14 @@
 .home {
 
+    //.topBus {
+    //    position: absolute;
+    //    left: 0;
+    //    right: 0;
+    //    border: none;
+    //    margin: 0;
+    //    border-bottom: 2px dashed @navigation-border;
+    //}
+
     .content-section {
         margin: 30px 0;
         display: flex;
@@ -10,7 +19,7 @@
         .text-content {
             width: 48%;
             padding-right: 1%;
-            @media @mobile{
+            @media @mobile {
                 width: 90%;
             }
         }
@@ -18,7 +27,7 @@
         .img-content {
             width: 48%;
             padding-left: 1%;
-            @media @mobile{
+            @media @mobile {
                 width: 90%;
             }
 
@@ -26,7 +35,8 @@
                 border-radius: 10px;
             }
         }
-        @media @mobile{
+
+        @media @mobile {
             .flexLayout(center, center);
             flex-direction: column;
         }
@@ -45,7 +55,8 @@
             padding-right: 1%;
             padding-left: 0;
         }
-        @media @mobile{
+
+        @media @mobile {
             flex-direction: column-reverse;
             width: 100%;
         }
@@ -58,7 +69,8 @@
         img {
             border-radius: 10px;
         }
-        @media @mobile{
+
+        @media @mobile {
             width: 90%;
         }
     }
@@ -72,19 +84,20 @@
         .destination {
             width: 30%;
             margin-bottom: 30px;
-            @media @mobile{
+            @media @mobile {
                 width: 90%;
             }
         }
 
-        .btn{
+        .btn {
             //le(@btnWidth, @btnTxtColor, @btnColor, @btnBorderClr ,@btnRadius){
             height: 40px;
             .buttonStyle(80%, white, @button-bg, blackl, 10px);
             font-size: 1.6rem;
             .flexLayout(center, center);
         }
-        @media @mobile{
+
+        @media @mobile {
             .flexLayout(center, center);
             flex-direction: column;
         }
@@ -92,7 +105,16 @@
 
     header {
         border-bottom: 2px dashed @navigation-border;
-        h2{
+        .flexLayout(center, flex-start);
+        flex-direction: column;
+
+        .topBus {
+            width: 100%;
+            border: none;
+            margin: 0;
+            border-bottom: 2px dashed @navigation-border;
+        }
+        h2 {
             margin-top: @defaultMargin;
         }
     }
