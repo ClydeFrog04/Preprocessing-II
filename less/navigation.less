@@ -1,1 +1,20 @@
 // Navigation Styles here
+.navigation{
+    width: 100%;
+    margin: @defaultMargin 0;
+    .flexLayout(space-between, center);
+
+    nav{
+        width: 42%;
+        .flexLayout(space-between, center);
+        a{
+            .defaultAnchors(1.6rem);
+        }
+        @media @mobile{
+            width: 90%;
+        }
+    }
+    @media @mobile{
+        flex-direction: column;
+    }
+}
